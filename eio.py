@@ -64,10 +64,16 @@ class Settings:
         self.THEME_DIR =  os.path.join(self.BASE_DIR, config.get(section, 'themes'))
         self.LIST_TEMPLATE_DIR = os.path.join(self.THEME_DIR, 'list')
 
+        try:
+            self.DEFAULT_THEME = config.get(section, 'theme')
+        except:
+            self.DEFAULT_THEME = 'default.tpl'
+
         # set up templates
         self.env = jinja2.Environment(loader=jinja2.FileSystemLoader([self.THEME_DIR, self.LIST_TEMPLATE_DIR], encoding='utf-8'))
 
-        self.DEFAULT_TEMPLATE = self.env.get_template('default.tpl')
+        self.DEFAULT_TEMPLATE = self.env.get_template(self.DEFAULT_THEME)
+
 
         try:
             self.TITLE = config.get(section, 'title')
