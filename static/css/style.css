@@ -48,8 +48,8 @@ p.commentary, p.timestamp {
 }
 
 #content {
-    width: 80%;
-    margin: 1em auto;
+    width: 600px;
+    margin: 1em 10em;
 }
 
 #header {
@@ -75,12 +75,4 @@ p.commentary, p.timestamp {
 #gallery .image {
     margin-right: 1em;
     margin-bottom: 1em;
-}
-
-.bigimg img {
-    max-width: 100%;
-}
-
-.bigimg {
-    text-align: center;
 }

@@ -65,7 +65,7 @@
 
 	  {% if post.type == 'image' %}
 	  <div class="bigimg">
-	    <a href="{{ post.url }}"><img src="{{ post.url }}" alt="{{ post.filename }}" title="{{ post.filename }}"/></a>
+	    <a href="{{ post.url }}"><img src="{{ post.medium }}" alt="{{ post.filename }}" title="{{ post.filename }}"/></a>
 	  </div>
 	  {% endif %}
 
