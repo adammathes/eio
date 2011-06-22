@@ -1,0 +1,54 @@
+Copyright 2010 Adam Mathes
+
+BSD Licensed. See LICENSE for details.
+
+This is a "file-blogging" publishing platform. Drag and drop files in
+a directory and the site is automatically generated to flat files and 
+uploaded to a web server.
+
+REQUIREMENTS
+
+   * Mac OS X 10.6+ (It probably works on 10.5 but is untested)
+   * Python 2.6+ (other versions may work but are untested)
+   * Python modules: jinja2, markdown2, mutagen, bleach, xattr
+   * A basic understanding of the command line for the setup.
+   * A webserver that can serve static files accessible via rsync
+
+
+INSTALLATION AND USAGE
+
+0. Install dependencies
+
+If you run
+
+> ./eio.py bootstrap
+
+it will try to install them for you. Or manually install with pip or easy_install
+
+> sudo easy_install jinja2 markdown2 mutagen bleach xattr
+
+1. Create a config file
+
+> cp settings.cfg.example settings.cfg
+
+The only thing you should really need to change is the "destination"
+which is the destination you want rsync to put the files. If you want
+this to happen automagically set up rsync to not require a
+password. This can be done with keyless ssh 
+http://blogs.sun.com/jkini/entry/how_to_scp_scp_and
+
+2. Drag files to the 'files' directory.
+
+Or copy or move or whatever.
+
+3. Run eio.py to generate the site. Hopefully this will... work.
+
+4. Once everything is looking good run
+
+> ./eio.py start
+
+to continuously monitor the files directory for changes. Whenever
+things are changed, the site will regenerate and upload, like magic!
+
+5. To edit templates see the themes directory. To modify css/js see
+the static directories.

@@ -1,0 +1,28 @@
+[eio]
+destination = 'amathes@trenchant.org:~/eio.trenchant.org'
+input = input
+output = output
+templates = templates
+url = http://eio.trenchant.org/
+
+[junkdrawer]
+destination = 'amathes@trenchant.org:~/junkdrawer.trenchant.org'
+input = junkdrawer-in
+output = junkdrawer-out
+templates = templates
+url = http://junkdrawer.trenchant.org/
+
+
+[templates]
+generic = generic_post.tpl
+text = text_post.tpl
+markdown = markdown_post.tpl
+webloc = webloc_post.tpl
+image = image_post.tpl
+audio = audio_post.tpl
+video = video_post.tpl
+page = page.tpl
+single = post.tpl
+daily = daily
+list = list
+tag = tag

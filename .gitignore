@@ -1,0 +1,7 @@
+build
+input
+output
+sites
+settings.cfg
+.DS_Store
+*.pyc

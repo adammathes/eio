@@ -1,0 +1,22 @@
+[eio]
+# destination = username@example.com:~/directory
+title = endless io
+description = a collection of files
+input = input
+output = output
+templates = templates
+url = http://example.com/eio/
+
+[templates]
+generic = generic_post.tpl
+text = text_post.tpl
+markdown = markdown_post.tpl
+webloc = webloc_post.tpl
+image = image_post.tpl
+audio = audio_post.tpl
+video = video_post.tpl
+page = page.tpl
+single = post.tpl
+daily = daily
+list = list
+tag = tag

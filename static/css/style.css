@@ -1,0 +1,86 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+/*    font-family: 'Helvetica Neue', 'Minion Pro', Gentium, 'Gentium Basic', 'Hoefler Text', Constantia, 'Palatino Linotype', Georgia, serif; */
+    font-family: Palatino;
+    line-height:1.5;
+    background: #fefefe;
+}
+
+a, a:hover, a:visited {
+    text-decoration: none;
+}
+
+h1 { font-size:1.5em; padding:1.75em 0 0 0; }
+h2 { font-size:1.33333em; padding:.75em 0 0 0; }
+h3 { font-size:1.16667em; padding:1.82143em 0 0 0; }
+p { margin-bottom: 1em; }
+h1, h2, h3 {
+    font-weight: normal;
+    margin: 0;
+}
+
+
+p {
+    max-width: 33em;
+    text-align: left;
+    margin: 0 auto 1em auto;
+}
+
+p.commentary, p.timestamp {
+    text-align: center;
+}
+
+.post {
+    margin-top: 1em;
+    padding: 1em 0;
+}
+
+.timestamp {
+    font-size: .75em;
+}
+
+.timestamp a {
+    color: #aaa;
+}
+
+#content {
+    width: 80%;
+    margin: 1em auto;
+}
+
+#header {
+    margin: 0 10em;
+}
+
+#directories {
+    position: absolute;
+    font-size: .75em;
+    left: 2em;
+    top: 3em;
+    padding-right: 1em;
+    border-right: solid 1px #cccccc;
+}
+
+#posts {
+}
+
+.nav {
+    clear: both;
+}
+
+#gallery .image {
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.bigimg img {
+    max-width: 100%;
+}
+
+.bigimg {
+    text-align: center;
+}
